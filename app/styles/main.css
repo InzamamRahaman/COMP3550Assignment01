@@ -1,7 +1,16 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  
   padding-bottom: 20px;
+  background-color: #595252;
+
+}
+
+#navbar-row {
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -60,7 +69,7 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,

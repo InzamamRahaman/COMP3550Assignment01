@@ -15,3 +15,26 @@ angular.module('assignment01bApp')
       'Karma'
     ];
   });
+
+
+ (function() {
+
+ 	var app = angular.module('PageApp', []);
+
+ 	app.controller('PageController', ['$scope', function($scope) {
+
+ 		$scope.page_names = ['HOME', 'CHART 1', 'CHART 2', 'CONTACT US'];
+ 		$scope.create_page_loc = function(page_name) {
+ 			return 'view' + '/' + page_name;
+ 		}
+
+ 		$scope.pages = _.map($scope.page_names, function(name) {
+ 			return {'name' : name, 'loc' : $scope.create_page_loc(name)}
+ 		});
+
+ 		
+
+
+ 	}]);
+
+ })();
