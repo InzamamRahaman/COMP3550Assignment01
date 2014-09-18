@@ -1,16 +1,22 @@
 /* Space out content a bit */
+
+
 body {
-  
   padding-bottom: 20px;
   background-color: #595252;
 
 }
 
-#navbar-row {
-}
-
 .nav-link {
   font-family: 'Oswald', sans-serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -41,9 +47,9 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 768px;
   }
 }
 .container-narrow > hr {
